@@ -1,0 +1,26 @@
+{
+  "name": "skillproof",
+  "version": "1.1.0",
+  "description": "SkillProof — Your work speaks. Make the proof visible. SaaS platform for portfolio builder, resume analyzer, skill matcher, and AI prompt generation with single-host deployment.",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "postinstall": "npm run install:all",
+    "build": "npm --prefix client run build",
+    "test": "node server/test-endpoints.js",
+    "start": "node server/server.js",
+    "start:server": "cd server && node server.js",
+    "start:client": "cd client && npm run dev",
+    "build:client": "cd client && npm run build"
+  },
+  "keywords": [
+    "portfolio",
+    "skill-analysis",
+    "resume-analyzer",
+    "developer-portfolio",
+    "ai-prompts",
+    "ats-readiness",
+    "single-host-deployment"
+  ],
+  "author": "SkillProof Team",
+  "license": "MIT"
+}
